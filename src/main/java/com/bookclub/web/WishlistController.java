@@ -28,9 +28,7 @@ public class WishlistController {
 	}
 	
 	@GetMapping
-    public String showWishlsit(Model model) {
-		List<WishlistItem> wishlist = wishlistDao.list();
-		model.addAttribute("wishlist", wishlist);
+    public String showWishlist(Model model) {
 		return "wishlist/list";
     }
 	@GetMapping(value="/new")
