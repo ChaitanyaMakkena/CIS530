@@ -41,6 +41,8 @@
 									<p>
 										<a href="#" th:href="@{/{id}(id=${book.getIsbn()})}"
 											class="btn btn-sm btn-outline-secondary">View</a>
+										<a href="#" th:href="${book.getInfoUrl()}"
+											class="btn btn-sm btn-outline-secondary" target="_blank">Web Link</a>
 									</p>
 								</div>
 							</div>
