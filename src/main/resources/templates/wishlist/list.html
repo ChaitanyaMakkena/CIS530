@@ -60,7 +60,7 @@ tbody, td, tfoot, th, thead, tr {
 
         const http = new HttpClient();
 
-        http.get('https://bookclub-p7im.onrender.com/api/wishlist').then(res => {
+        http.get('https://bookclub-530-90a3584d6d8e.herokuapp.com/api/wishlist').then(res => {
             console.log(res);
             document.getElementById("wishlist").innerHTML = buildTable(res);
         }).catch(e => {
