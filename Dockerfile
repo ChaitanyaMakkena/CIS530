@@ -1,5 +1,5 @@
 FROM maven:3-openjdk-11 AS build
-COPY ..
+COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:11-jdk-slim-sid
